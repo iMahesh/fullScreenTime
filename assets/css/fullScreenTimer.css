@@ -1,10 +1,75 @@
-#body{
-  background-color: black;
-  color: white;
+body,html {
+  height:100vh;
+  background: black;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
 }
-#time{
+div {
+  height:100vh;
+  position: relative;
+  margin: 0 auto;
+  resize: both;
+  overflow: auto;
+}
+div span {
+  background: black;
   color: white;
-  top: 30%;
-  text-align: center;
-  font-size: 15rem;
+  width: 100%;
+  text-align:center;
+  transform: translate(-50%, -60%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  resize: both;
+  font-weight: 700;
   }
+
+@media (min-width:320px)  {
+ /* smartphones, iPhone, portrait 480x320 phones */
+ span{
+   font-size:60px;
+ }
+}
+@media (min-width:481px)  {
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+span{
+  font-size:80px;
+}
+ }
+@media (min-width:641px)  {
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+span{
+  font-size:100px;
+}
+ }
+@media (min-width:961px)  {
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+span{
+  font-size:150px;
+}
+ }
+@media (min-width:1025px) {
+/* big landscape tablets, laptops, and desktops */
+span{
+  font-size:170px;
+}
+}
+@media (min-width:1281px) {
+/* hi-res laptops and desktops */
+span{
+  font-size:210px;
+}
+}
+@media (min-width:1441px) {
+/* hi-res laptops and desktops */
+span{
+  font-size:240px;
+}
+}
+@media (min-width:2561px) {
+/* hi-res laptops and desktops */
+span{
+  font-size:440px;
+}
+}
