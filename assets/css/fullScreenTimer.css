@@ -24,7 +24,6 @@ div span {
   resize: both;
   font-weight: 700;
   }
-
 @media (min-width:320px)  {
  /* smartphones, iPhone, portrait 480x320 phones */
  span{
